@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Membership | Fishtown Medicine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__content">
+      <p class="eyebrow">Direct Primary Care in the Heart of Fishtown</p>
+      <h1>Membership made for long-term primary care relationships</h1>
+      <p class="hero__lede">
+        Transparent pricing, concierge-level access, and a care team that knows you by name.
+        Choose the plan that matches how you like to invest in your health.
+      </p>
+      <a class="hero__cta" href="#plans">Explore plans</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="upgrade-note">
+      <div class="container">
+        <span class="upgrade-note__icon" aria-hidden="true">↺</span>
+        <p class="upgrade-note__copy">Upgrade anytime; we’ll pro-rate credits toward quarterly or annual.</p>
+      </div>
+    </section>
+
+    <section class="plans" id="plans">
+      <div class="container">
+        <h2>Membership plans</h2>
+        <p class="section-lede">Simple pricing for ongoing care. Pay monthly, or unlock savings and concierge perks when you prepay.</p>
+        <div class="plan-grid">
+          <article class="plan-card plan-card--annual">
+            <div class="plan-card__badge">Best Value</div>
+            <h3>Annual</h3>
+            <p class="plan-card__price"><span class="plan-card__currency">$</span>2,500<span class="plan-card__term">/year</span></p>
+            <p class="plan-card__effective">≈ $208/mo effective rate</p>
+            <p class="plan-card__savings">Save $500 vs paying monthly (two months free)</p>
+            <ul class="plan-card__features">
+              <li>Priority scheduling and waitlist bypass</li>
+              <li>Complimentary quarterly check-in or lab review</li>
+              <li>Concierge messaging with rapid responses</li>
+              <li>All core membership benefits</li>
+            </ul>
+            <a class="plan-card__cta" href="https://buy.stripe.com">Start annual membership</a>
+            <p class="plan-card__policy">Cancel before renewal. 30-day satisfaction window on your first year.</p>
+          </article>
+
+          <article class="plan-card plan-card--quarterly">
+            <div class="plan-card__badge">Most Popular</div>
+            <h3>Quarterly</h3>
+            <p class="plan-card__price"><span class="plan-card__currency">$</span>675<span class="plan-card__term">/quarter</span></p>
+            <p class="plan-card__effective">$225/mo effective rate</p>
+            <p class="plan-card__savings">Save $75 every quarter vs monthly</p>
+            <ul class="plan-card__features">
+              <li>Priority scheduling and waitlist bypass</li>
+              <li>Complimentary check-in each quarter</li>
+              <li>Concierge messaging with rapid responses</li>
+              <li>All core membership benefits</li>
+            </ul>
+            <a class="plan-card__cta" href="https://buy.stripe.com">Start quarterly membership</a>
+            <p class="plan-card__policy">Cancel before renewal or upgrade to annual anytime—we’ll pro-rate unused time.</p>
+          </article>
+
+          <article class="plan-card plan-card--monthly">
+            <h3>Monthly</h3>
+            <p class="plan-card__price"><span class="plan-card__currency">$</span>250<span class="plan-card__term">/month</span></p>
+            <p class="plan-card__savings">Flexibility of month-to-month access</p>
+            <ul class="plan-card__features">
+              <li>Same-day or next-day appointments</li>
+              <li>Unlimited secure messaging with your care team</li>
+              <li>Extended visits focused on prevention</li>
+            </ul>
+            <a class="plan-card__cta plan-card__cta--secondary" href="https://buy.stripe.com">Start monthly membership</a>
+            <p class="plan-card__policy">Pause or cancel before your next renewal anytime.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div class="container">
+        <div class="benefits__content">
+          <h2>Every membership includes</h2>
+          <ul class="benefits__list">
+            <li>Personal primary care physician with extended visits tailored to your goals</li>
+            <li>Direct text and portal messaging for quick follow-ups and ongoing guidance</li>
+            <li>Preventive labs and imaging coordination with transparent pricing</li>
+            <li>Care navigation, referrals, and advocacy from a dedicated team</li>
+          </ul>
+        </div>
+        <aside class="benefits__policies">
+          <h3>Membership policies</h3>
+          <ul>
+            <li>Cancel before renewal; easy pause available if life changes.</li>
+            <li>Pro-rate unused time when upgrading to annual or quarterly.</li>
+            <li>30-day satisfaction window on your first year—switch tiers with confidence.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <div class="cta__text">
+          <h2>Ready to become a member?</h2>
+          <p>Tell us a little about yourself and our team will reach out within one business day.</p>
+        </div>
+        <a class="cta__button" href="https://fishtownmedicine.com/contact">Talk with our team</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Fishtown Medicine. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
